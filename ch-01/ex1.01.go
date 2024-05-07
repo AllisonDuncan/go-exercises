@@ -27,5 +27,5 @@ func act01() {
 		peanut_allergy bool   = false
 	)
 
-	fmt.Println(fname, " ", lname, " ", age, " ", peanut_allergy)
+	fmt.Println(fname, lname, age, peanut_allergy)
 }
