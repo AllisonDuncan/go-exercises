@@ -10,6 +10,8 @@ import (
 func Main() {
 	ex01()
 	act01()
+	ex01()
+	ex0109()
 }
 
 func ex01() {
@@ -28,4 +30,32 @@ func act01() {
 	)
 
 	fmt.Println(fname, lname, age, peanut_allergy)
+}
+
+func ex0109() {
+	//main course
+	var total float64 = 2 * 13
+	fmt.Println("Sub :", total)
+	//drinks
+	total += (4 * 2.25)
+	fmt.Println("Sub :", total)
+	//discount
+	total -= 5
+	fmt.Println("Sub :", total)
+	//tip
+	tip := total * 0.2
+	fmt.Println("Tip :", tip)
+	total = total + tip
+	fmt.Println("Total :", total)
+	//split bill
+	split := total / 2
+	fmt.Println("Split :", split)
+	//reward
+	visitCount := 24
+	visitCount += 1
+	remainder := visitCount % 5
+	if remainder == 0 {
+		fmt.Println("Reward")
+	}
+
 }
